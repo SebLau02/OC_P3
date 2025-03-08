@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as *;
+
+.button-secondary {
+  border-radius: 20px;
+  background-color: $grey-light;
+  box-shadow: 0px 4px 15px 0px #00000026;
+  padding: 1.75rem 0;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-left: 12px;
+  padding-left: 2rem;
+  text-align: left;
+
+  & > i {
+    align-self: start;
+    margin-right: 1rem;
+
+    &.active {
+      color: $purple;
+    }
+  }
+}

@@ -1,3 +1,3 @@
-@forward "variables";
-@forward "font";
-@forward "mixins";
+@use "font";
+@use "mixins";
+@use "utilities";

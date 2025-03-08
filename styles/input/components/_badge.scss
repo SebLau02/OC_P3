@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as *;
+
+.badge {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  translate: -50% -50%;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $purple;
+  color: $light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,31 @@
+// $body: (
+//   "1": (
+//     "font-size": 18px,
+//     "line-height": 1.5,
+//     "letter-spacing": 0.1em
+//   ),
+//   "2": (
+//     "font-size": 16px,
+//     "line-height": 1.4,
+//     "letter-spacing": 0.05em
+//   ),
+// );
+
+// @each $key, $value in $body {
+//   .body-#{$key} {
+//     font-family: Roboto;
+//     font-weight: 300;
+//     font-size: map-get($value, "font-size");
+//     line-height: map-get($value, "line-height");
+//     letter-spacing: map-get($value, "letter-spacing");
+//     text-align: center;
+//   }
+// }
+
+.body-1 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+}
