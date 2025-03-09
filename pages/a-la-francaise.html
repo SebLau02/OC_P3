@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ohmyfood</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/output/style.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="logo-container shadow-1 py-4 relative z-1">
+        <img
+          src="../images/ohmyfood.png"
+          alt="logo de ohmfood"
+          class="mx-auto block"
+        />
+      </div>
+    </header>
+    <main>
+      <div class="restaurant-cover">
+        <img
+          src="../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          alt="plat dans une assiette"
+        />
+      </div>
+      <section class="px-4 pb-8 restaurant-main-section">
+        <h1 class="title-section font-title">À la française</h1>
+        <section class="restaurant-section mt-10">
+          <h2>Entrées</h2>
+          <label class="dish">
+            <span class="dish__name pt-4 pl-4">Tartare de poulpe acidulé</span>
+            <span class="dish__ingredient pb-4 pl-4">Aux zestes d'orange</span>
+            <span class="dish__price px-4">25€</span>
+            <input type="checkbox" name="starter" value="0" class="none" />
+            <span class="dish__check">
+              <i class="fa-solid fa-circle-check"></i>
+            </span>
+          </label>
+          <label class="dish">
+            <span class="dish__name pt-4 pl-4">Velouté de légumes d'antan</span>
+            <span class="dish__ingredient pb-4 pl-4"
+              >Carotte, panais, topinambour</span
+            >
+            <span class="dish__price px-4">35€</span>
+            <input type="checkbox" name="starter" value="1" class="none" />
+            <span class="dish__check">
+              <i class="fa-solid fa-circle-check"></i>
+            </span>
+          </label>
+          <label class="dish">
+            <span class="dish__name pt-4 pl-4">Soupe à l'oignon</span>
+            <span class="dish__ingredient pb-4 pl-4">Revisité</span>
+            <span class="dish__price px-4">20€</span>
+            <input type="checkbox" name="starter" value="3" class="none" />
+            <span class="dish__check">
+              <i class="fa-solid fa-circle-check"></i>
+            </span>
+          </label>
+        </section>
+        <section class="restaurant-section mt-10">
+          <h2>Plats</h2>
+          <label class="dish">
+            <span class="dish__name pt-4 pl-4">Coquilles Saint-Jacques</span>
+            <span class="dish__ingredient pb-4 pl-4"
+              >Accompagnées d'une purée de panais</span
+            >
+            <span class="dish__price px-4">40€</span>
+            <input type="checkbox" name="dish" value="0" class="none" />
+            <span class="dish__check">
+              <i class="fa-solid fa-circle-check"></i>
+            </span>
+          </label>
+          <label class="dish">
+            <span class="dish__name pt-4 pl-4">Magret de canard</span>
+            <span class="dish__ingredient pb-4 pl-4"
+              >Et parmentier de pommes de terre</span
+            >
+            <span class="dish__price px-4">35€</span>
+            <input type="checkbox" name="dish" value="1" class="none" />
+            <span class="dish__check">
+              <i class="fa-solid fa-circle-check"></i>
+            </span>
+          </label>
+          <label class="dish">
+            <span class="dish__name pt-4 pl-4"
+              >Pigeonneau d’Ille-et-Vilaine</span
+            >
+            <span class="dish__ingredient pb-4 pl-4"
+              >Sur son lit de gnocchis aux légumes</span
+            >
+            <span class="dish__price px-4">44€</span>
+            <input type="checkbox" name="dish" value="3" class="none" />
+            <span class="dish__check">
+              <i class="fa-solid fa-circle-check"></i>
+            </span>
+          </label>
+        </section>
+        <section class="restaurant-section mt-10">
+          <h2>Desserts</h2>
+          <label class="dish">
+            <span class="dish__name pt-4 pl-4"
+              >Pétales de violettes glacés</span
+            >
+            <span class="dish__ingredient pb-4 pl-4"
+              >Et purée de noisettes</span
+            >
+            <span class="dish__price px-4">18€</span>
+            <input type="checkbox" name="dessert" value="0" class="none" />
+            <span class="dish__check">
+              <i class="fa-solid fa-circle-check"></i>
+            </span>
+          </label>
+          <label class="dish">
+            <span class="dish__name pt-4 pl-4">Fondant au chocolat</span>
+            <span class="dish__ingredient pb-4 pl-4">Revisité</span>
+            <span class="dish__price px-4">22€</span>
+            <input type="checkbox" name="dessert" value="1" class="none" />
+            <span class="dish__check">
+              <i class="fa-solid fa-circle-check"></i>
+            </span>
+          </label>
+          <label class="dish">
+            <span class="dish__name pt-4 pl-4">Millefeuille croustillant</span>
+            <span class="dish__ingredient pb-4 pl-4"
+              >Myrtilles et pâte d’amande</span
+            >
+            <span class="dish__price px-4">23€</span>
+            <input type="checkbox" name="dessert" value="3" class="none" />
+            <span class="dish__check">
+              <i class="fa-solid fa-circle-check"></i>
+            </span>
+          </label>
+        </section>
+        <button class="button-primary mx-auto block mt-8">Commander</button>
+      </section>
+    </main>
+
+    <footer class="p-6 bg-grey">
+      <div class="logo-container">
+        <img src="../images/ohmyfoodwhite.png" alt="logo de ohmyfood" />
+      </div>
+      <ul>
+        <li><i class="fa-solid fa-utensils mr-4"></i>Proposer un restaurant</li>
+        <li>
+          <i class="fa-solid fa-handshake-angle mr-3"></i>Devenir partenaire
+        </li>
+        <li>Mentions légales</li>
+        <li>Contact</li>
+      </ul>
+    </footer>
+  </body>
+</html>
