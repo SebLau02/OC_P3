@@ -38,6 +38,13 @@
 .bg-grey-light {
   background-color: $grey-light;
 }
+.bg-grey {
+  background-color: $grey;
+
+  & * {
+    color: $light;
+  }
+}
 $text: (
   "center": center,
   "start": start,

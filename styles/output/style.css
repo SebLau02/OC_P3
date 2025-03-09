@@ -48,6 +48,13 @@
   background-color: #f6f6f6;
 }
 
+.bg-grey {
+  background-color: #353535;
+}
+.bg-grey * {
+  color: #ffffff;
+}
+
 .text-center {
   text-align: center;
 }
@@ -631,6 +638,10 @@ a {
   color: inherit;
 }
 
+ul {
+  list-style: none;
+}
+
 * {
   font-family: "Roboto", "sans-serif";
 }
@@ -745,6 +756,17 @@ a {
 }
 .card .card-body i.liked.active + i {
   display: none;
+}
+
+footer .logo-container {
+  width: 100px;
+}
+footer .logo-container img {
+  width: 100%;
+  object-fit: cover;
+}
+footer ul li {
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=style.css.map */

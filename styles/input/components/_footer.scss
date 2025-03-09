@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as *;
+
+footer {
+  .logo-container {
+    width: 100px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  ul {
+    li {
+      line-height: 1.5;
+    }
+  }
+}
