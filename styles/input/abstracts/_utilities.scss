@@ -9,6 +9,9 @@
 .block {
   display: block;
 }
+.none {
+  display: none;
+}
 .flex-column {
   flex-direction: column;
 }
@@ -116,6 +119,12 @@ $sizes: (
   }
   .pt-#{$key} {
     padding-top: $value;
+  }
+  .pl-#{$key} {
+    padding-left: $value;
+  }
+  .pr-#{$key} {
+    padding-right: $value;
   }
   .pb-#{$key} {
     padding-bottom: $value;

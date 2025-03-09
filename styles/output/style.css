@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap");
 .w-full {
   width: 100%;
 }
@@ -9,6 +9,10 @@
 
 .block {
   display: block;
+}
+
+.none {
+  display: none;
 }
 
 .flex-column {
@@ -141,6 +145,14 @@
   padding-top: 0rem;
 }
 
+.pl-0 {
+  padding-left: 0rem;
+}
+
+.pr-0 {
+  padding-right: 0rem;
+}
+
 .pb-0 {
   padding-bottom: 0rem;
 }
@@ -185,6 +197,14 @@
 
 .pt-1 {
   padding-top: 0.25rem;
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
+.pr-1 {
+  padding-right: 0.25rem;
 }
 
 .pb-1 {
@@ -233,6 +253,14 @@
   padding-top: 0.5rem;
 }
 
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -277,6 +305,14 @@
 
 .pt-3 {
   padding-top: 0.75rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
 }
 
 .pb-3 {
@@ -325,6 +361,14 @@
   padding-top: 1rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -369,6 +413,14 @@
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
 .pb-5 {
@@ -417,6 +469,14 @@
   padding-top: 1.5rem;
 }
 
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
+}
+
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -461,6 +521,14 @@
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
 }
 
 .pb-8 {
@@ -509,6 +577,14 @@
   padding-top: 2.5rem;
 }
 
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -553,6 +629,14 @@
 
 .pt-12 {
   padding-top: 2.75rem;
+}
+
+.pl-12 {
+  padding-left: 2.75rem;
+}
+
+.pr-12 {
+  padding-right: 2.75rem;
 }
 
 .pb-12 {
@@ -601,6 +685,14 @@
   padding-top: 3rem;
 }
 
+.pl-14 {
+  padding-left: 3rem;
+}
+
+.pr-14 {
+  padding-right: 3rem;
+}
+
 .pb-14 {
   padding-bottom: 3rem;
 }
@@ -644,6 +736,10 @@ ul {
 
 * {
   font-family: "Roboto", "sans-serif";
+}
+
+.font-title {
+  font-family: "Shrikhand", "sans-serif";
 }
 
 .header-container .logo-container img {
@@ -767,6 +863,92 @@ footer .logo-container img {
 }
 footer ul li {
   line-height: 1.5;
+}
+
+.restaurant-cover img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.restaurant-main-section {
+  position: relative;
+  background-color: #f6f6f6;
+}
+.restaurant-main-section h1 {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+.restaurant-main-section::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  translate: 0 -100%;
+  height: 40px;
+  width: 100%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #f6f6f6;
+}
+.restaurant-main-section .restaurant-section h2 {
+  position: relative;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin-bottom: calc(8px + 1.5rem);
+}
+.restaurant-main-section .restaurant-section h2::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  translate: 0 8px;
+  height: 3px;
+  width: 40px;
+  background-color: #99e2d0;
+}
+.restaurant-main-section .restaurant-section .dish {
+  display: grid;
+  grid-template-columns: auto 15% 60px;
+  grid-template-rows: repeat(2, 1fr);
+  border-radius: 15px;
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.restaurant-main-section .restaurant-section .dish__name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-bottom: 5px;
+  grid-column: 1/3;
+}
+.restaurant-main-section .restaurant-section .dish__ingredient {
+  font-weight: 300;
+  font-size: 15.04px;
+  line-height: 100%;
+  letter-spacing: 0;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+.restaurant-main-section .restaurant-section .dish__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1/3;
+  grid-column: 3/4;
+  background-color: #99e2d0;
+}
+.restaurant-main-section .restaurant-section .dish__check i {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
