@@ -1273,7 +1273,7 @@ footer ul li {
 }
 
 .restaurant-cover {
-  max-height: 383px;
+  max-height: 275px;
   overflow: hidden;
 }
 .restaurant-cover img {
@@ -1282,7 +1282,16 @@ footer ul li {
   max-height: 100%;
   object-fit: cover;
 }
+.restaurant-cover .-translate-Y-30 {
+  transform: translateY(-30%);
+}
 @media (min-width: 1023px) {
+  .restaurant-cover {
+    max-height: 383px;
+  }
+  .restaurant-cover .-translate-Y-12 {
+    transform: translateY(-12%);
+  }
   .restaurant-cover img {
     translate: 0 -34%;
   }
