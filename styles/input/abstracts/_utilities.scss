@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 .w-full {
   width: 100%;
@@ -23,6 +24,9 @@
 }
 .align-center {
   align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
 }
 .mx-auto {
   margin-left: auto;
@@ -143,5 +147,60 @@ $sizes: (
   }
   .gap-#{$key} {
     gap: $value;
+  }
+}
+
+.child-equal {
+  & > * {
+    flex: 1;
+  }
+}
+
+@include media-query(lg) {
+  $screens: (
+    "md": 767px,
+    "lg": 1023px,
+  );
+  @each $key, $value in $screens {
+    .#{$key}__col-to-row {
+      display: flex;
+      flex-direction: row;
+    }
+    .#{$key}__col-to-row-reverse {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .#{$key}__gap-2 {
+      gap: 2rem;
+    }
+  }
+  .max-w-lg {
+    max-width: 1055px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .lg-between {
+    justify-content: space-between;
+  }
+  .col-2 {
+    & > * {
+      width: 100%;
+      max-width: 490px;
+    }
+  }
+  .lg-mr-2 {
+    margin-right: 2rem;
+  }
+  .lg-mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .lg-w-fit {
+    width: fit-content;
+  }
+  .max-w-md {
+    max-width: 634px;
   }
 }

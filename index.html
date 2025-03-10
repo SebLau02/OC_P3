@@ -39,10 +39,10 @@
         <button class="button-primary mx-auto">Explorer nos restaurants</button>
       </section>
 
-      <section class="px-4 py-10">
+      <section class="px-4 py-10 max-w-lg">
         <h2 class="title-section">Fonctionnement</h2>
 
-        <div class="flex flex-column gap-6 mt-6">
+        <div class="flex flex-column gap-6 mt-6 lg__col-to-row child-equal">
           <button class="button-secondary relative">
             <span class="badge">1</span
             ><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un
@@ -60,8 +60,10 @@
       </section>
 
       <section class="px-4 py-10 bg-grey-light">
-        <h2 class="title-section pb-5">Restaurants</h2>
-        <div class="flex flex-column align-center gap-5">
+        <h2 class="title-section pb-5 max-w-lg">Restaurants</h2>
+        <div
+          class="flex flex-column align-center gap-5 lg__col-to-row max-w-lg col-2 wrap lg-between"
+        >
           <a href="./la-palette-du-goût.html" class="w-full">
             <article class="card">
               <div class="card-image relative">
@@ -142,11 +144,11 @@
       </section>
     </main>
 
-    <footer class="p-6 bg-grey">
-      <div class="logo-container">
+    <footer class="p-6 bg-grey lg__col-to-row-reverse lg__gap-2">
+      <div class="logo-container lg-mr-2">
         <img src="./images/ohmyfoodwhite.png" alt="logo de ohmyfood" />
       </div>
-      <ul>
+      <ul class="lg__col-to-row-reverse lg__gap-2">
         <li><i class="fa-solid fa-utensils mr-4"></i>Proposer un restaurant</li>
         <li>
           <i class="fa-solid fa-handshake-angle mr-3"></i>Devenir partenaire
