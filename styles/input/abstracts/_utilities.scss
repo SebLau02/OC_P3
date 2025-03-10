@@ -52,6 +52,17 @@
     color: $light;
   }
 }
+.hidden {
+  opacity: 0;
+}
+.out {
+  opacity: 0;
+  translate: -20px 0;
+}
+.-out {
+  opacity: 0;
+  translate: 20px 0;
+}
 $text: (
   "center": center,
   "start": start,

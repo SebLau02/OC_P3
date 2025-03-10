@@ -63,6 +63,20 @@
   color: #ffffff;
 }
 
+.hidden {
+  opacity: 0;
+}
+
+.out {
+  opacity: 0;
+  translate: -20px 0;
+}
+
+.-out {
+  opacity: 0;
+  translate: 20px 0;
+}
+
 .text-center {
   text-align: center;
 }
@@ -776,6 +790,165 @@
     max-width: 634px;
   }
 }
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes fadeOut {
+  to {
+    display: none;
+  }
+}
+.fadeOut {
+  animation: fadeOut 0.1s 4s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  to {
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation: fadeIn 0.1s 4.1s ease-in forwards;
+}
+
+.fadeIn__1 {
+  animation: fadeIn 0.3s calc(0.2s + 4s) ease-in forwards;
+}
+
+.slideIn {
+  animation: slideIn 0.2s 5s ease-out forwards;
+}
+
+.slideIn__1 {
+  animation: slideIn 0.2s calc(0.2s + 5s) ease-out forwards;
+}
+
+.fadeIn {
+  animation: fadeIn 0.1s 4.1s ease-in forwards;
+}
+
+.fadeIn__2 {
+  animation: fadeIn 0.3s calc(0.3s + 4s) ease-in forwards;
+}
+
+.slideIn {
+  animation: slideIn 0.2s 5s ease-out forwards;
+}
+
+.slideIn__2 {
+  animation: slideIn 0.2s calc(0.3s + 5s) ease-out forwards;
+}
+
+.fadeIn {
+  animation: fadeIn 0.1s 4.1s ease-in forwards;
+}
+
+.fadeIn__3 {
+  animation: fadeIn 0.3s calc(0.4s + 4s) ease-in forwards;
+}
+
+.slideIn {
+  animation: slideIn 0.2s 5s ease-out forwards;
+}
+
+.slideIn__3 {
+  animation: slideIn 0.2s calc(0.4s + 5s) ease-out forwards;
+}
+
+.fadeIn {
+  animation: fadeIn 0.1s 4.1s ease-in forwards;
+}
+
+.fadeIn__4 {
+  animation: fadeIn 0.3s calc(0.5s + 4s) ease-in forwards;
+}
+
+.slideIn {
+  animation: slideIn 0.2s 5s ease-out forwards;
+}
+
+.slideIn__4 {
+  animation: slideIn 0.2s calc(0.5s + 5s) ease-out forwards;
+}
+
+.fadeIn {
+  animation: fadeIn 0.1s 4.1s ease-in forwards;
+}
+
+.fadeIn__5 {
+  animation: fadeIn 0.3s calc(0.6s + 4s) ease-in forwards;
+}
+
+.slideIn {
+  animation: slideIn 0.2s 5s ease-out forwards;
+}
+
+.slideIn__5 {
+  animation: slideIn 0.2s calc(0.6s + 5s) ease-out forwards;
+}
+
+.fadeIn {
+  animation: fadeIn 0.1s 4.1s ease-in forwards;
+}
+
+.fadeIn__6 {
+  animation: fadeIn 0.3s calc(0.7s + 4s) ease-in forwards;
+}
+
+.slideIn {
+  animation: slideIn 0.2s 5s ease-out forwards;
+}
+
+.slideIn__6 {
+  animation: slideIn 0.2s calc(0.7s + 5s) ease-out forwards;
+}
+
+.fadeIn {
+  animation: fadeIn 0.1s 4.1s ease-in forwards;
+}
+
+.fadeIn__7 {
+  animation: fadeIn 0.3s calc(0.8s + 4s) ease-in forwards;
+}
+
+.slideIn {
+  animation: slideIn 0.2s 5s ease-out forwards;
+}
+
+.slideIn__7 {
+  animation: slideIn 0.2s calc(0.8s + 5s) ease-out forwards;
+}
+
+.fadeIn {
+  animation: fadeIn 0.1s 4.1s ease-in forwards;
+}
+
+.fadeIn__8 {
+  animation: fadeIn 0.3s calc(0.9s + 4s) ease-in forwards;
+}
+
+.slideIn {
+  animation: slideIn 0.2s 5s ease-out forwards;
+}
+
+.slideIn__8 {
+  animation: slideIn 0.2s calc(0.9s + 5s) ease-out forwards;
+}
+
 *,
 ::before,
 ::after {
@@ -1086,6 +1259,42 @@ footer ul li {
 }
 .new-badge.active {
   display: block;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 10;
+}
+
+.letter {
+  animation: bounce 2s 2;
+}
+
+.letter:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.letter:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.letter:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.letter:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.letter:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.letter:nth-child(7) {
+  animation-delay: 0.6s;
 }
 
 /*# sourceMappingURL=style.css.map */
