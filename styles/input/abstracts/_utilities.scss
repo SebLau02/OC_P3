@@ -63,6 +63,15 @@
   opacity: 0;
   translate: 20px 0;
 }
+.out-y {
+  opacity: 0;
+  translate: 0 -20px;
+}
+.-out-y {
+  opacity: 0;
+  translate: 0 20px;
+}
+
 $text: (
   "center": center,
   "start": start,

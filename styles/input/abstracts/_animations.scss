@@ -37,6 +37,7 @@
 }
 
 $delay: (
+  "0": 0.1s,
   "1": 0.2s,
   "2": 0.3s,
   "3": 0.4s,
@@ -45,6 +46,10 @@ $delay: (
   "6": 0.7s,
   "7": 0.8s,
   "8": 0.9s,
+  "9": 1s,
+  "10": 1.1s,
+  "11": 1.2s,
+  "12": 1.3s,
 );
 @each $key, $value in $delay {
   .fadeIn {
@@ -59,5 +64,8 @@ $delay: (
 
   .slideIn__#{$key} {
     animation: slideIn 0.2s calc(#{$value} + 5s) ease-out forwards;
+  }
+  .delay-#{$key} {
+    animation-delay: #{$value} !important;
   }
 }
