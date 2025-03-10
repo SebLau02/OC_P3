@@ -746,6 +746,12 @@ ul {
   width: 100%;
   max-width: 162px;
 }
+.header-container .logo-container .back-icon {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  translate: 0% -50%;
+}
 
 .button-primary {
   position: relative;

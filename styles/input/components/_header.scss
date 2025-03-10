@@ -4,5 +4,11 @@
       width: 100%;
       max-width: 162px;
     }
+    .back-icon {
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      translate: 0% -50%;
+    }
   }
 }
