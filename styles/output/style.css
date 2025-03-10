@@ -753,7 +753,6 @@
   .md__col-to-row {
     display: flex;
     flex-direction: row;
-    column-gap: 0;
   }
   .md__col-to-row-reverse {
     display: flex;
@@ -765,7 +764,6 @@
   .lg__col-to-row {
     display: flex;
     flex-direction: row;
-    column-gap: 0;
   }
   .lg__col-to-row-reverse {
     display: flex;

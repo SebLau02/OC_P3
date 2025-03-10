@@ -185,7 +185,6 @@ $sizes: (
     .#{$key}__col-to-row {
       display: flex;
       flex-direction: row;
-      column-gap: 0;
     }
     .#{$key}__col-to-row-reverse {
       display: flex;
