@@ -31,17 +31,25 @@
       font-size: 17px;
       letter-spacing: 0;
     }
-    & > i {
-      &.liked {
-        display: none;
-        color: $purple;
-        &.active {
-          display: block;
-        }
+
+    .outline {
+      .icon-hover {
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        background: linear-gradient(180deg, $purple, $pink);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        background-size: 100% 0%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        transition: background-size 0.2s ease-in-out;
       }
-    }
-    i.liked.active + i {
-      display: none;
+
+      .icon-hover:hover {
+        background-size: 100% 100%;
+      }
     }
   }
 }
