@@ -33,11 +33,11 @@
           alt="plat dans une assiette"
         />
       </div>
-      <section class="px-4 pb-8 restaurant-main-section">
+      <form class="px-4 pb-8 restaurant-main-section">
         <h1 class="title-section font-title">Le délice des sens</h1>
         <section class="restaurant-section mt-10">
           <h2>Entrées</h2>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4">Tartare de thon</span>
             <span class="dish__ingredient pb-4 pl-4">Assaisonné au yuzu</span>
             <span class="dish__price px-4">25€</span>
@@ -46,7 +46,7 @@
               <i class="fa-solid fa-circle-check"></i>
             </span>
           </label>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4"
               >Bouchée de homard croustillant
             </span>
@@ -59,7 +59,7 @@
               <i class="fa-solid fa-circle-check"></i>
             </span>
           </label>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4">Velouté de cèpes </span>
             <span class="dish__ingredient pb-4 pl-4">Aux truffes</span>
             <span class="dish__price px-4">20€</span>
@@ -71,7 +71,7 @@
         </section>
         <section class="restaurant-section mt-10">
           <h2>Plats</h2>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4"
               >Poulet rôti aux herbes de Provence
             </span>
@@ -84,7 +84,7 @@
               <i class="fa-solid fa-circle-check"></i>
             </span>
           </label>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4">Langouste rôtie </span>
             <span class="dish__ingredient pb-4 pl-4"
               >Et ses légumes de saison</span
@@ -95,7 +95,7 @@
               <i class="fa-solid fa-circle-check"></i>
             </span>
           </label>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4">Côte de bœuf Angus </span>
             <span class="dish__ingredient pb-4 pl-4"
               >Et sa purée de panais</span
@@ -109,7 +109,7 @@
         </section>
         <section class="restaurant-section mt-10">
           <h2>Desserts</h2>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4">Farandole de desserts</span>
             <span class="dish__ingredient pb-4 pl-4">Du chef</span>
             <span class="dish__price px-4">18€</span>
@@ -118,7 +118,7 @@
               <i class="fa-solid fa-circle-check"></i>
             </span>
           </label>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4">Crème brulée </span>
             <span class="dish__ingredient pb-4 pl-4">Revisitée</span>
             <span class="dish__price px-4">22€</span>
@@ -127,7 +127,7 @@
               <i class="fa-solid fa-circle-check"></i>
             </span>
           </label>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4">Tiramisu </span>
             <span class="dish__ingredient pb-4 pl-4">À la noisette</span>
             <span class="dish__price px-4">23€</span>
@@ -137,8 +137,10 @@
             </span>
           </label>
         </section>
-        <button class="button-primary mx-auto block mt-8">Commander</button>
-      </section>
+        <button type="submit" class="button-primary mx-auto block mt-8">
+          Commander
+        </button>
+      </form>
     </main>
 
     <footer class="p-6 bg-grey">

@@ -33,11 +33,11 @@
           alt="plat dans une assiette"
         />
       </div>
-      <section class="px-4 pb-8 restaurant-main-section">
+      <form class="px-4 pb-8 restaurant-main-section">
         <h1 class="title-section font-title">La pallette du goût</h1>
         <section class="restaurant-section mt-10">
           <h2>Entrées</h2>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4">Fricassée d'escargots</span>
             <span class="dish__ingredient pb-4 pl-4"
               >Au piment d'Espelette</span
@@ -48,7 +48,7 @@
               <i class="fa-solid fa-circle-check"></i>
             </span>
           </label>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4"
               >Foie gras de canard mi-cuit</span
             >
@@ -61,7 +61,7 @@
               <i class="fa-solid fa-circle-check"></i>
             </span>
           </label>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4">Œuf au plat</span>
             <span class="dish__ingredient pb-4 pl-4"
               >Assaisonné à la truffe sur lit de caviar</span
@@ -75,7 +75,7 @@
         </section>
         <section class="restaurant-section mt-10">
           <h2>Plats</h2>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4">Filet de boeuf aux herbes</span>
             <span class="dish__ingredient pb-4 pl-4"
               >Accompagné de sa ribambelle de légumes</span
@@ -86,7 +86,7 @@
               <i class="fa-solid fa-circle-check"></i>
             </span>
           </label>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4"
               >Parmentier de queue de bœuf</span
             >
@@ -99,7 +99,7 @@
               <i class="fa-solid fa-circle-check"></i>
             </span>
           </label>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4">Filet de turbot</span>
             <span class="dish__ingredient pb-4 pl-4">Aux agrumes</span>
             <span class="dish__price px-4">44€</span>
@@ -111,7 +111,7 @@
         </section>
         <section class="restaurant-section mt-10">
           <h2>Desserts</h2>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4">Paris-Brest</span>
             <span class="dish__ingredient pb-4 pl-4">Revisité</span>
             <span class="dish__price px-4">18€</span>
@@ -120,7 +120,7 @@
               <i class="fa-solid fa-circle-check"></i>
             </span>
           </label>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4"
               >Macaron au chocolat d'exception</span
             >
@@ -133,7 +133,7 @@
               <i class="fa-solid fa-circle-check"></i>
             </span>
           </label>
-          <label class="dish">
+          <label class="dish" tabindex="0">
             <span class="dish__name pt-4 pl-4">Mousse au chocolat</span>
             <span class="dish__ingredient pb-4 pl-4"
               >Au piment d'espelette et à la truffle noirre</span
@@ -145,8 +145,10 @@
             </span>
           </label>
         </section>
-        <button class="button-primary mx-auto block mt-8">Commander</button>
-      </section>
+        <button type="submit" class="button-primary mx-auto block mt-8">
+          Commander
+        </button>
+      </form>
     </main>
 
     <footer class="p-6 bg-grey">
