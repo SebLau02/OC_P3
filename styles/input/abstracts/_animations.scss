@@ -17,6 +17,7 @@
 @keyframes fadeOut {
   to {
     display: none;
+    opacity: 0;
   }
 }
 .fadeOut {
